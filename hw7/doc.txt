@@ -1,0 +1,10 @@
+To run this project, type "python hw7.py" at the command-line.
+
+The project generates a 5 x 5 terrain model to start with.  The size is configurable.
+To change the size, type the size iteration into the Grid Size box and click display.
+The program will generate a (2 ^ whatever you entered) + 1 X (2 ^ whatever you entered) + 1
+terrain grid.  If the number entered is less than 2 the program will ignore you.
+
+You may change the skin mode by checking or unchecking the "skin" box.
+
+As with the planets, changes to the camera are velocity-based, as is the spin.

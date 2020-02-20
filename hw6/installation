@@ -1,0 +1,12 @@
+Sure. These should be installed pretty much in this order.
+
+wxWidgets
+Python 2.4
+PyOpenGL [dependant on Python]
+wxPython [dependant on Python and wxWidgets]
+wxGlade  [dependant on wxPython]
+PIL* (Python Image Library) [dependant on Python]
+Numpy* (Python advanced numerical types) [dependant on Python]
+
+
+* these are optional, but they will probably be useful later

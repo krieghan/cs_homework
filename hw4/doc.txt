@@ -1,0 +1,13 @@
+Alright, so a few points:
+
+First, vertices must be specified in clockwise order.  Otherwise, the polygon will not give proper collision times.
+
+Second, if no number of reflections are specified, the simulation will go on forever.
+
+Third, a very abnormal problem with the angle of reflection occurs if we try to bounce off the outside of the
+arena.  At that point, the angle of reflection takes the line on a straight line INTO the arena, where it proceeds to 
+behave normally.  This is reminiscient of a problem I had earlier with the angle of reflection when bouncing off the 
+OUTSIDE of shapes.  In order to avert that problem, I did a round when returning the collision time.  It is possible that this 
+round is occuring the wrong way when the ray bounces off the outside of the arena, which may be causing my problems.
+
+Other than that, I know of no problems with this simulation.

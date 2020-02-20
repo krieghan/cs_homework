@@ -1,0 +1,14 @@
+start spin
+translate 5 5
+rotate 35
+translate -5 -5
+shear 2 2
+draw
+shear -2 -2
+scale .33 .33                
+end
+spin
+spin
+spin
+spin
+spin

@@ -1,0 +1,16 @@
+def OnTimer(self, event):
+        """This fuction handles all of our Timer events. This just updates the ball by calculating out the cos and sin of the current heading.
+When the ball hits a wall, the heading is reflected across the y-axis, and when it hits the floor, ceiling or paddle, it is reflected across th
+e x-axis."""
+        size = self.GetSizeTuple()
+        self.ball[0] += math.cos(self.heading)
+        self.ball[1] += math.sin(self.heading)
+        if self.ball[0] >= size[0] or self.ball[0] <= 0:
+            self.heading = math.pi - self.heading
+        if self.ball[1] >= size[1] or self.ball[1] <= 0:
+            self.heading = -self.heading
+
+        if self.paddle[2] <= self.ball[1] <= self.paddle[3]:
+            if self.paddle[0] <= self.ball[0] <= self.paddle[1] - 10:
+                self.heading = -self.heading
+        self.OnDraw()
